@@ -38,7 +38,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 global.db = pool;
-app.get("/",user.home);
+app.get("/", user.home);
 app.get('/login', user.login); // loginPage
 app.get('/signup', user.signup); // signupPage
 app.post('/signup', user.signupS); // store login user
@@ -48,7 +48,7 @@ app.post("/insert", user.insertdata); // insert data
 app.post("/logout", user.logout); // logout
 app.post("/delete", user.delete); // delete appointment
 app.get("/report", user.report); // show appointments
-app.post("/home",user.exit);
+app.post("/home", user.exit);
 
 
 
@@ -65,5 +65,4 @@ app.post('/update/:id', upload.single('photo'), (req, res) => user.updateDoctor(
 
 
 app.listen(port, () => {
-    console.log("Server is running on port ");
 });
