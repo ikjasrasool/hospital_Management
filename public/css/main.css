@@ -474,7 +474,7 @@ button[class ^= navbar]:hover{
 }
 .doc-panel-item .img{
     position: relative;
-    height: 440px;
+    height: 600px;
     background-color: var(--light-gray);
     overflow: hidden;
     -webkit-box-align: end;
